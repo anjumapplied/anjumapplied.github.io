@@ -5,8 +5,17 @@
 
 
 <p>I'm Anjum Naaz :)<br/>
-
-<a href="ImportantContacts.txt" >ImportantContacts </a>
-
+Enter password: <input id='password' type='text'  />
+<a href="ImportantContacts.txt" onclick="javascript:return validatePass()" >ImportantContacts </a>
+<script>
+function validatePass(){
+if(document.getElementById('password').value=='anjum'){
+return true;
+}else{
+alert('wrong password');
+return false;
+}
+}
+</script>
 </body>
 </html>
